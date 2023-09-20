@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+body{
+    height: 100vh;
+    background:linear-gradient( #beeaff,rgb(201, 249, 255));
+    /* position: fixed; */
+}
+.header{
+    position: relative;
+    margin:0 auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+h1{
+    width:48%;
+    margin-left:1% ;
+    font-size: 100%;
+}
+.search{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+    border: 1px solid black;
+    margin:0 5px;
+    border-radius: 20px;
+}
+#location{
+    width: 90%;
+    height: 90%;
+    border: none;
+    outline: none;
+    margin-left:7px;
+    background-color: transparent;
+    font-size: 70%;
+}
+.bx{
+    width: 20%;
+    background-color: transparent;
+    font-size:15px;
+    border-left:1px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+.bx:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.main-weather{
+    margin-top: 20px;
+    position: relative;
+    /* top:10vh; */
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    /* background-color: aqua; */
+
+}
+img{
+    width:7em;
+}
+.main-info{
+    margin-top:10px;
+    width: 100vw;
+    height: 25vh;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.temp{
+    font-size:400%;
+    margin: 5px ;
+}
+.conditions{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    font-size: 100%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.conditions p{
+    margin: 20px auto;
+    font-size: 100%;
+}
+.side-weather{
+    width: 96vw;
+    height: 50vh;
+    margin: 4vh auto;
+    background-color: rgba(159, 218, 255, 0.519);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.side-info{
+    width:85%;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.side-info p{
+    font-size: 70%;
+}
+.footer {
+    width: 100vw;
+    font-size: 60%;
+    text-align: center;
+    display: block;
+    position: fixed;
+    bottom: 5px;
+}
