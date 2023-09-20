@@ -1,4 +1,4 @@
-var search = document.querySelector('#search');
+var search = document.querySelector('.bx');
 
 search.addEventListener('click', () => {
     let city = document.querySelector('#location')
@@ -28,6 +28,7 @@ async function getweather() {
     document.querySelector('.condition').innerHTML = Math.round(data.main.temp_max) + '°' + '/' + Math.round(data.main.temp_min) + '°';
     document.querySelector('.weather').innerHTML = data.weather[0].description.toUpperCase();
     document.querySelector('.City').innerHTML = data.name.toUpperCase();
+    location.reload();
 }
 window.onload = () => {
     getweather();
